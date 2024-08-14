@@ -1,0 +1,465 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+
+}
+
+body{
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  background: url(../image/hero-slider-2.jpg) fixed;
+  background-position: center;
+background-size: cover;
+
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(62, 62, 62, 0.797);
+
+  }
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+header .log {
+
+  margin-bottom: -10px;
+  margin-right: -10px;
+
+}
+header .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Arial Narrow Bold';
+}
+
+header .logo:hover {
+  color: orange;
+  transition: 0.4s ease;
+}
+
+.navbar .logo span{
+  color: rgb(226, 155, 63);
+}
+
+.navbar .menu-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar .menu-list span span{
+  color: rgb(226, 155, 63);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(233, 143, 40);
+}
+
+  #menu-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #menu-close-btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    cursor: pointer;
+  }
+
+  .heading{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    color: white;
+
+    padding: 30px ;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading h1{
+
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;padding: 30px;
+    color: white;
+    overflow-x: auto;
+
+}
+.table table{
+
+    color: white;
+    padding: 30px;
+}
+.table caption {
+
+    color: white;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: rgba(0, 0, 0, 0.669);
+    color: white;
+}
+table, th, td {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: rgba(0, 0, 0, 0.669);
+    color: white;
+}
+
+th,td {
+    padding: 20px;
+}
+
+caption{
+
+
+    font-size: 25px;
+
+    color: black
+}
+
+
+
+#update {
+	display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#update:hover {
+  background-color: #45a049;
+}
+
+#update2 {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#update2:hover {
+  background-color: #45a049;
+}
+
+#update3 {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#update3:hover {
+  background-color: #45a049;
+}
+
+#update4 {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#update4:hover {
+  background-color: #45a049;
+}
+
+#update5 {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#update5:hover {
+  background-color: #45a049;
+}
+
+#delete {
+	display: inline-block;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#delete:hover {
+  background-color: rgb(216, 19, 19);
+}
+
+#delete1 {
+  display: inline-block;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+#delete1:hover {
+  background-color: rgb(216, 19, 19);
+}
+.newStaff td a{
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+.newStaff td a:hover {
+    background-color: #45a049;
+}
+
+  @media screen and (max-width: 900px){
+    header {
+      padding: 1px 20px;
+    }
+    header.show-mobile-menu::before{
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+
+
+
+    }
+
+    #menu-close-btn {
+      display: block;
+    }
+
+    .navbar .menu-list {
+      position: fixed;
+      left: -260px;
+      top: 0;
+      flex-direction: column;
+      width: 260px;
+      height: 100vh;
+      background: #fff;
+      padding: 70px 40px 0;
+      transition: left 0.15s ease;
+
+    }
+
+    header.show-mobile-menu .navbar .menu-list {
+      left: 0;
+    }
+    .navbar a {
+      color: black;
+    }
+
+  }
+
+  @media screen and (min-width: 900px){
+    #menu-btn {
+      opacity: 0;
+
+      }
+    }
+
+    @media screen and (max-width: 900px){
+
+      .heading{
+        width: 50%;
+
+        color: rgb(138, 23, 23);
+
+        padding: 30px ;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .heading h1{
+
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .table {
+
+
+
+        padding: 30px;
+        color: rgb(0, 0, 0);
+
+    }
+    .table table{
+
+        color: white;
+        padding: 30px;
+    }
+    .table caption {
+
+        color: white;
+        padding: 25px;
+        border: 2px solid rgba(255, 255, 255, .2);
+        background-color: rgba(0, 0, 0, 0.669);
+        color: white;
+    }
+    table, th, td {
+        border: 2px solid rgba(255, 255, 255, .2);
+        background-color: rgba(0, 0, 0, 0.669);
+        color: white;
+    }
+
+    th,td {
+        padding: 20px;
+    }
+
+    caption{
+
+
+        font-size: 25px;
+
+        color: black
+    }
+    .bigtable{
+        padding: 25px;
+    }
+
+
+
+    #update {
+      display: inline-block;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+
+    }
+    #update:hover {
+      background-color: #45a049;
+    }
+
+    #delete {
+      display: inline-block;
+      background-color: red;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+
+    }
+    #delete:hover {
+      background-color: rgb(216, 19, 19);
+    }
+    .addemployee td a{
+      display: inline-block;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .addemployee td a:hover {
+        background-color: #000000;
+    }
+
+    }

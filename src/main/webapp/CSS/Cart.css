@@ -1,0 +1,356 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+
+  }
+
+  body{
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background: url(../image/hero-slider-2.jpg) fixed;
+    background-position: center;
+  background-size: cover;
+
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(62, 62, 62, 0.797);
+
+    }
+
+  header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    opacity: 1;
+  }
+
+  header .log {
+
+    margin-bottom: -10px;
+    margin-right: -10px;
+
+  }
+  header .logo {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Arial Narrow Bold';
+  }
+
+  header .logo:hover {
+    color: orange;
+    transition: 0.4s ease;
+  }
+
+  .navbar .logo span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar .menu-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .navbar .menu-list span span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: rgb(233, 143, 40);
+  }
+
+.cart-container {
+    width: 50%;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.cart-item {
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.item-details p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.quantity span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.summary {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.summary p {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.promo-code {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.promo-code input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.promo-code button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #333;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.promo-code button:hover{
+    color: white;
+    background: red;
+    transition: 0.4s ease;
+
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.cart-buttons button {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+
+
+.cart-buttons a:hover{
+    background-color: rgb(51, 182, 225);
+}
+
+
+
+.cart-buttons .checkout {
+    background-color: greenyellow;
+}
+
+#menu-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+#menu-close-btn {
+display: none;
+position: absolute;
+right: 20px;
+top: 20px;
+
+cursor: pointer;
+}
+
+
+
+footer {
+background-color: #000000b3;
+  padding: 10px;
+  text-align: center;
+}
+
+footer .admin button{
+background: #fff;
+outline: none;
+border: none;
+font-size: 0.8rem;
+font-weight: 500;
+margin-top: 40px;
+padding: 6px 20px;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s ease;
+justify-content: center;
+}
+
+footer .admin button:hover {
+background-color: orange;
+border-radius: 15px;
+
+}
+
+footer .about {
+color: #fff;
+border: #fff;
+
+
+}
+
+.copy {
+color: white;
+}
+
+@media screen and (max-width: 900px){
+header {
+  padding: 1px 20px;
+}
+header.show-mobile-menu::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+
+
+
+}
+
+#menu-close-btn {
+  display: block;
+}
+
+.navbar .menu-list {
+  position: fixed;
+  left: -260px;
+  top: 0;
+  flex-direction: column;
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  padding: 70px 40px 0;
+  transition: left 0.15s ease;
+
+}
+
+header.show-mobile-menu .navbar .menu-list {
+  left: 0;
+}
+.navbar a {
+  color: black;
+}
+
+
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.cart-container {
+    width: 80%;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+
+}
+}
+
+@media screen and (min-width: 900px){
+    #menu-btn {
+      opacity: 0;
+
+      }
+    }

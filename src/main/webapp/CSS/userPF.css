@@ -1,0 +1,253 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+
+  }
+
+body{
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background: url(../image/profile_bg.jpg) fixed;
+    background-position: center;
+  background-size: cover;
+
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(62, 62, 62, 0.797);
+
+    }
+
+  header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    opacity: 1;
+  }
+
+  header .log {
+
+    margin-bottom: -10px;
+    margin-right: -10px;
+
+  }
+  header .logo {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Arial Narrow Bold';
+  }
+
+  header .logo:hover {
+    color: orange;
+    transition: 0.4s ease;
+  }
+
+  .navbar .logo span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar .menu-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .navbar .menu-list span span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: rgb(233, 143, 40);
+  }
+
+  .profile {
+    text-align: center;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+  #menu-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #menu-close-btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    cursor: pointer;
+  }
+
+
+
+  footer {
+    background-color: #000000b3;
+      padding: 10px;
+      text-align: center;
+  }
+
+
+
+  footer .admin button:hover {
+    background-color: orange;
+    border-radius: 15px;
+
+  }
+
+  footer .about {
+    color: #fff;
+    border: #fff;
+
+
+  }
+
+  .copy {
+    color: white;
+  }
+
+  @media screen and (max-width: 900px){
+
+    body{
+        min-height: 100vh;
+
+        justify-content: center;
+        align-items: center;
+        background: url(../image/profile_bg2.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+
+    }
+
+    header {
+      padding: 1px 20px;
+    }
+    header.show-mobile-menu::before{
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+
+
+
+    }
+
+    #menu-close-btn {
+      display: block;
+    }
+
+    .navbar .menu-list {
+      position: fixed;
+      left: -260px;
+      top: 0;
+      flex-direction: column;
+      width: 260px;
+      height: 100vh;
+      background: #fff;
+      padding: 70px 40px 0;
+      transition: left 0.15s ease;
+
+    }
+
+    header.show-mobile-menu .navbar .menu-list {
+      left: 0;
+    }
+    .navbar a {
+      color: black;
+    }
+}
+
+    @media screen and (min-width: 900px){
+        #menu-btn {
+          opacity: 0;
+
+          }
+        }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.button-content {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: black;
+}
+
+.button-content:hover {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}

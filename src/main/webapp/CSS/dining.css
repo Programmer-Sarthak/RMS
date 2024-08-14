@@ -1,0 +1,367 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+
+  }
+
+  body{
+    background: url(../image/Back.jpg) fixed;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(62, 62, 62, 0.797);
+
+    }
+
+  header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    opacity: 1;
+  }
+
+  header .log {
+
+    margin-bottom: -10px;
+    margin-right: -10px;
+
+  }
+  header .logo {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Arial Narrow Bold';
+  }
+
+  header .logo:hover {
+    color: orange;
+    transition: 0.4s ease;
+  }
+
+  .navbar .logo span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar .menu-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .navbar .menu-list span span{
+    color: rgb(226, 155, 63);
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: rgb(233, 143, 40);
+  }
+
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 100px;
+}
+.hero .content {
+  color: white;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.hero .content h1 {
+  font-size: 3rem;
+  max-width: 600px;
+  margin: auto;
+
+}
+
+.hero .content h1 span {
+  color: orange;
+}
+
+.hero .content p {
+  font-weight: 300;
+
+  max-width: 600px;
+  margin: auto;
+}
+
+.hero .content p span {
+  color: orange;
+}
+
+.hero .content button {
+  background: #fff;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 40px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero .content button:hover {
+  color: #fff;
+  background: orange;
+  border-radius: 20px;
+}
+
+.container {
+  border: 2px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.588);
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Light shadow effect */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.125);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out; /* Smooth transitions on hover */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #4CAF50; /* Highlight border on focus */
+}
+
+textarea {
+  height: 100px;
+}
+
+
+.form-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-title h1 {
+  font-size: 2em;
+  color: #4CAF50; /* Match button color */
+}
+
+#occasion {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+#tabletype {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+  #menu-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #menu-close-btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    cursor: pointer;
+  }
+
+
+
+
+  footer {
+    background-color: #000000b3;
+      padding: 10px;
+      text-align: center;
+  }
+
+  footer .admin button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 6px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    justify-content: center;
+  }
+
+  footer .admin button:hover {
+    background-color: orange;
+    border-radius: 15px;
+
+  }
+
+  footer .about {
+    color: #fff;
+    border: #fff;
+
+
+  }
+
+  .copy {
+    color: white;
+  }
+
+
+  @media screen and (max-width: 900px){
+    header {
+    padding: 1px 20px;
+  }
+  header.show-mobile-menu::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+
+
+
+  }
+
+  #menu-close-btn {
+    display: block;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    flex-direction: column;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    padding: 70px 40px 0;
+    transition: left 0.15s ease;
+
+  }
+
+  header.show-mobile-menu .navbar .menu-list {
+    left: 0;
+  }
+  .navbar a {
+    color: black;
+  }
+
+    .hero .content {
+      text-align: center;
+
+    }
+    .hero .content :is(h1, p) {
+      max-width: 100%;
+
+    }
+    .hero .content h1 {
+      font-size: 2.3rem;
+      line-height: 60px;
+    }
+
+    .hero .content p span {
+      color: orange;
+    }
+
+    .hero .content button {
+      padding: 9px 18px;
+
+    }
+
+
+    }
+
+  @media screen and (min-width: 900px){
+  #menu-btn {
+    opacity: 0;
+
+    }
+  }
+
+  @media screen and (max-width : 700px) {
+
+    .container{
+      width: 80%;
+    }
+
+    @media screen and (min-width : 300px) {
+
+      .hero{
+        padding-top: 120px;
+      }
+
+    }
+
+
+  @media only screen and (max-width : 700px) {
+
+    .sahi{
+
+        display: inline;
+    }
+
+}
+}
